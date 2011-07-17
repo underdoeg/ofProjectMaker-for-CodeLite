@@ -5,7 +5,7 @@
 ## Debug
 ProjectName            :=ofMakerStandalone
 ConfigurationName      :=Debug
-IntermediateDirectory  :=./Debug
+IntermediateDirectory  :=./bin
 OutDir                 := $(IntermediateDirectory)
 WorkspacePath          := "/home/phwhitfield/softwareSources/codelite/OfProjectMaker"
 ProjectPath            := "/home/phwhitfield/softwareSources/codelite/OfProjectMaker"
@@ -66,7 +66,7 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) $(Objects) $(LibPath) $(Libs) $(LinkOptions)
 
 $(IntermediateDirectory)/.d:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@test -d ./bin || $(MakeDirCommand) ./bin
 
 PreBuild:
 

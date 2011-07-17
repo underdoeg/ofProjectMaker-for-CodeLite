@@ -1,1 +1,1 @@
-./Debug/main.o ./Debug/ofdialog.o
+./bin/main.o ./bin/ofdialog.o
