@@ -31,7 +31,7 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 	wxTextCtrl* projName=new wxTextCtrl(panel, -1, _(""), wxPoint(marginX, curY), wxSize(wAll, h));
 	curY+=h+marginY;
 
-	wxCheckBox* useFenster=new wxCheckBox(panel, -1, _("use ofxFenster"), wxPoint(marginX,curY));
+	wxCheckBox* useFenster=new wxCheckBox(panel, -1, _("use ofxFenster (not yet implemented...)"), wxPoint(marginX,curY));
 	curY+=h+marginY;
 
 	wxBoxSizer *vbox = new wxBoxSizer(wxVERTICAL);

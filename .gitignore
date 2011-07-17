@@ -2,7 +2,8 @@ Debug
 Release
 Release_gcc_unicode
 DebugUnicode
-*.workspace.session
+*.session
 *.tags
 *.d
 *.o
+*.pyc
