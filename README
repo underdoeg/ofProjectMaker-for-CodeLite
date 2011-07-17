@@ -2,6 +2,8 @@ This is a little application that provides a graphical user interface to create 
 
 It currently only works as a standalone application but integration into codeblocks as a plugin is planed. Just have to get past a strange segmentation fault...
 
+SCREENSHOT https://github.com/underdoeg/ofProjectMaker-for-CodeLite/blob/master/screenshot.png
+
 
 INSTALL PRECOMPILED VERSION
 ============================

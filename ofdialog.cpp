@@ -53,7 +53,7 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 
 void OfDialog::openPathDialog(wxCommandEvent& e)
 {
-	wxDirDialog* dlg = new wxDirDialog(this, _("Choose directory for the new project"), _(""), wxDD_DEFAULT_STYLE | wxDD_DIR_MUST_EXIST);
+	wxDirDialog* dlg = new wxDirDialog(this, _("Choose directory for the new project"), wxStandardPaths::Get().GetDocumentsDir(), wxDD_DEFAULT_STYLE | wxDD_DIR_MUST_EXIST);
 	if(!dlg->ShowModal())
 		return;
 	pathToProject=dlg->GetPath();
