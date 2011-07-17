@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="ofProjectMaker" Database="./ofProjectMaker.tags">
+  <Project Name="ofMakerStandalone" Path="ofMakerStandalone.project" Active="Yes"/>
+  <Project Name="ofMaker" Path="ofMaker.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="ofMakerStandalone" ConfigName="Debug"/>
+      <Project Name="ofMaker" ConfigName="DebugUnicode"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="ofMakerStandalone" ConfigName="Release"/>
+      <Project Name="ofMaker" ConfigName="DebugUnicode"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
