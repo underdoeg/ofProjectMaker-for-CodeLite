@@ -2,11 +2,9 @@
 #include "icon.xpm"
 #include <wx/stdpaths.h>
 
-OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openframeworks project"), wxDefaultPosition, wxSize(700, 400))
+OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openframeworks project"), wxDefaultPosition, wxSize(465, 235))
 {
 	SetIcon(wxIcon(icon_xpm));
-
-	wxPanel *panel = new wxPanel(this, -1, wxDefaultPosition, wxSize(500, 300));
 
 	int marginX=5;
 	int marginY=marginX;
@@ -17,7 +15,9 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 
 	int h=30;
 
-	int curY=marginY;
+	wxPanel *panel = new wxPanel(this, -1, wxDefaultPosition, wxSize(wAll+marginX*2, 150));
+
+	int curY=marginY*3;
 	//project path
 	wxStaticText* projPathLabel = new wxStaticText(panel, -1, _("project path"), wxPoint(marginX, curY), wxDefaultSize);
 	curY+=projPathLabel->GetSize().GetHeight()+marginY;
@@ -33,22 +33,19 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 	curY+=h+marginY;
 
 	wxCheckBox* useFenster=new wxCheckBox(panel, -1, _("use ofxFenster (not yet implemented...)"), wxPoint(marginX,curY));
-	curY+=h+marginY;
+	curY+=h+marginY*2;
 
 	wxBoxSizer *vbox = new wxBoxSizer(wxVERTICAL);
 	wxBoxSizer *hbox = new wxBoxSizer(wxHORIZONTAL);
 
-	wxButton *okButton = new wxButton(this, 99, wxT("Ok"), wxDefaultPosition, wxSize(70, 30));
+	wxButton *okButton = new wxButton(panel, 99, wxT("Ok"), wxPoint(marginX, curY), wxSize(wAll, h*2));
 	Connect(99, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(OfDialog::ok));
+	curY+=h+marginY;
 
-	wxButton *cancelButton = new wxButton(this, wxID_EXIT, wxT("Cancel"), wxDefaultPosition, wxSize(70, 30));
+	/*wxButton *cancelButton = new wxButton(panel, wxID_EXIT, wxT("Cancel"), wxPoint(marginX, curY), wxSize(wAll, h));
 	Connect(wxID_EXIT, wxEVT_COMMAND_BUTTON_CLICKED, wxCommandEventHandler(OfDialog::cancel));
-
-	hbox->Add(okButton, 1);
-	hbox->Add(cancelButton, 1, wxLEFT | wxRIGHT, 5);
-
+	*/
 	vbox->Add(panel, 1);
-	vbox->Add(hbox, 0, wxALIGN_RIGHT | wxTOP | wxBOTTOM, 10);
 
 	SetSizer(vbox);
 

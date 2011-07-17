@@ -1,78 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Session Name="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofProjectMaker.workspace">
-  <int Value="9" Name="m_selectedTab"/>
+  <int Value="2" Name="m_selectedTab"/>
   <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofProjectMaker.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/apps/addonsExamples/ofxFensterExample/src/testApp.cpp" Name="FileName"/>
-      <int Value="54" Name="FirstVisibleLine"/>
-      <int Value="55" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/apps/addonsExamples/ofxFensterExample/src/testApp.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="17" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/addons/ofxFenster/src/ofxFensterManager.cpp" Name="FileName"/>
-      <int Value="138" Name="FirstVisibleLine"/>
-      <int Value="136" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/addons/ofxFenster/src/ofxFensterManager.h" Name="FileName"/>
-      <int Value="60" Name="FirstVisibleLine"/>
-      <int Value="70" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/addons/ofxFenster/src/ofxFenster.cpp" Name="FileName"/>
-      <int Value="143" Name="FirstVisibleLine"/>
-      <int Value="144" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/addons/ofxFenster/src/ofxFenster.h" Name="FileName"/>
-      <int Value="129" Name="FirstVisibleLine"/>
-      <int Value="130" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/libs/openFrameworks/utils/ofUtils.h" Name="FileName"/>
-      <int Value="13" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/programming/openFrameworks/addons/ofxFenster/libs/ghost/include/GHOST_Types.h" Name="FileName"/>
-      <int Value="175" Name="FirstVisibleLine"/>
-      <int Value="176" Name="CurrentLine"/>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofdialog.cpp" Name="FileName"/>
+      <int Value="34" Name="FirstVisibleLine"/>
+      <int Value="68" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofdialog.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="16" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofdialog.cpp" Name="FileName"/>
-      <int Value="16" Name="FirstVisibleLine"/>
-      <int Value="57" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofmaker.cpp" Name="FileName"/>
-      <int Value="5" Name="FirstVisibleLine"/>
-      <int Value="37" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="29" Name="CurrentLine"/>
+      <int Value="87" Name="FirstVisibleLine"/>
+      <int Value="90" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
   </TabInfoArray>

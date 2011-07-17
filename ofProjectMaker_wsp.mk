@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo ----------Building project:[ ofMaker - DebugUnicode ]----------
-	@"$(MAKE)" -f "ofMaker.mk"
+	@echo ----------Building project:[ ofMakerStandalone - Debug ]----------
+	@cd "standalone" && "$(MAKE)" -f "ofMakerStandalone.mk"
 clean:
-	@echo ----------Cleaning project:[ ofMaker - DebugUnicode ]----------
-	@"$(MAKE)" -f "ofMaker.mk" clean
+	@echo ----------Cleaning project:[ ofMakerStandalone - Debug ]----------
+	@cd "standalone" && "$(MAKE)" -f "ofMakerStandalone.mk" clean
