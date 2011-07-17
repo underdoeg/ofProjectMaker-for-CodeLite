@@ -30,9 +30,11 @@ if __name__== '__main__':
     if name=="":
         msg = "NAME OF THE NEW PROJECT?\n"
         name = raw_input(msg).strip()
-    
-    path = os.path.join(path, name)
+
     srcPath= os.path.join(os.path.dirname(os.path.realpath(__file__)),"emptyExample")
+    path = os.path.join(path, name)
+    
+    
     shutil.copytree(srcPath, path)
     for file in os.listdir(path):
         title, ext = os.path.splitext(os.path.basename(file))
