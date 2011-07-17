@@ -2,3 +2,6 @@ Debug
 Release
 Release_gcc_unicode
 DebugUnicode
+*.workspace.session
+*.tags
+
