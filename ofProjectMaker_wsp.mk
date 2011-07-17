@@ -2,7 +2,7 @@
 
 All:
 	@echo ----------Building project:[ ofMakerStandalone - Debug ]----------
-	@"$(MAKE)" -f "ofMakerStandalone.mk"
+	@cd "standalone" && "$(MAKE)" -f "ofMakerStandalone.mk"
 clean:
 	@echo ----------Cleaning project:[ ofMakerStandalone - Debug ]----------
-	@"$(MAKE)" -f "ofMakerStandalone.mk" clean
+	@cd "standalone" && "$(MAKE)" -f "ofMakerStandalone.mk" clean

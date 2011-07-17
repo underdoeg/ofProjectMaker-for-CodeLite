@@ -27,9 +27,12 @@ IMPLEMENT_APP(wxMiniApp);
 
 bool wxMiniApp::OnInit()
 {
-	OfDialog ofDialog(NULL);
-	ofDialog.Show();
 
+
+	OfDialog ofDialog(NULL);
+	ofDialog.ShowModal();
+
+	exit(true);
 	// enter the application's main loop
     return true;
 }

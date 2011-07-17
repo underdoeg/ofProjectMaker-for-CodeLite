@@ -1,5 +1,6 @@
 #include "ofdialog.h"
 #include "icon.xpm"
+#include <wx/stdpaths.h>
 
 OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openframeworks project"), wxDefaultPosition, wxSize(700, 400))
 {
@@ -28,7 +29,7 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 	//project name
 	wxStaticText* projNameLabel = new wxStaticText(panel, -1, _("project name"), wxPoint(marginX, curY), wxDefaultSize);
 	curY+=projNameLabel->GetSize().GetHeight()+marginY;
-	wxTextCtrl* projName=new wxTextCtrl(panel, -1, _(""), wxPoint(marginX, curY), wxSize(wAll, h));
+	projName=new wxTextCtrl(panel, -1, _(""), wxPoint(marginX, curY), wxSize(wAll, h));
 	curY+=h+marginY;
 
 	wxCheckBox* useFenster=new wxCheckBox(panel, -1, _("use ofxFenster (not yet implemented...)"), wxPoint(marginX,curY));
@@ -51,8 +52,6 @@ OfDialog::OfDialog(wxWindow* parent):wxDialog(parent, -1, _("create a new openfr
 
 	SetSizer(vbox);
 
-	ShowModal();
-	Destroy();
 }
 
 void OfDialog::openPathDialog(wxCommandEvent& e)
@@ -71,6 +70,9 @@ void OfDialog::cancel(wxCommandEvent& e)
 
 void OfDialog::ok(wxCommandEvent& e)
 {
-	std::cout << "SOMETHING IS GOING TO HAPPEN HERE "<<std::endl;
+	wxString command(_("python "));
+	command += wxStandardPaths::Get().GetResourcesDir();
+	std::cout << command.mb_str() << std::endl;
+	//system(command.mb_str());
 	Close(true);
 }

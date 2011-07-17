@@ -1,1 +1,0 @@
-./bin/main.o ./bin/ofdialog.o

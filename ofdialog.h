@@ -16,7 +16,7 @@ public:
 
 private:
 	wxTextCtrl* projPath;
-
+	wxTextCtrl* projName;
 };
 
 #endif // OFDIALOGUE_H
