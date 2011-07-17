@@ -2,6 +2,7 @@ This is a little application that provides a graphical user interface to create 
 
 It currently only works as a standalone application but integration into codeblocks as a plugin is planed. Just have to get past a strange segmentation fault...
 
+SCREENSHOT PLUGIN -> https://github.com/underdoeg/ofProjectMaker-for-CodeLite/blob/master/screenshotPlugin.png
 SCREENSHOT -> https://github.com/underdoeg/ofProjectMaker-for-CodeLite/blob/master/screenshot.png
 
 
@@ -10,6 +11,8 @@ INSTALL PRECOMPILED VERSION
 - Download and extract the release.tar.gz file in the root of this repository -> https://github.com/underdoeg/ofProjectMaker-for-CodeLite/raw/master/release.tar.gz
 - cd into the directory
 - Then run sudo ./install.sh
+- run the standalone software from terminal with ofMaker
+- restart codelite, now when you right click on the workspace, there should be an "entry new OF project"
 
 HOW TO INSTALL FROM SOURCE
 ============================
