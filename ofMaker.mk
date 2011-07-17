@@ -64,8 +64,8 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects) > $(ObjectsFileList)
 	$(SharedObjectLinkerName) $(OutputSwitch)$(OutputFile) $(Objects) $(LibPath) $(Libs) $(LinkOptions)
-	@$(MakeDirCommand) "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-debug"
-	@echo rebuilt > "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-debug/ofMaker"
+	@$(MakeDirCommand) "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-release"
+	@echo rebuilt > "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-release/ofMaker"
 
 $(IntermediateDirectory)/.d:
 	@test -d ./DebugUnicode || $(MakeDirCommand) ./DebugUnicode
@@ -105,6 +105,6 @@ clean:
 	$(RM) $(IntermediateDirectory)/ofdialog$(DependSuffix)
 	$(RM) $(IntermediateDirectory)/ofdialog$(PreprocessSuffix)
 	$(RM) $(OutputFile)
-	$(RM) "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-debug/ofMaker"
+	$(RM) "/home/phwhitfield/softwareSources/codelite/OfProjectMaker/.build-release/ofMaker"
 
 

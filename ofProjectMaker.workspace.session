@@ -5,20 +5,50 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofdialog.cpp" Name="FileName"/>
-      <int Value="34" Name="FirstVisibleLine"/>
-      <int Value="68" Name="CurrentLine"/>
+      <int Value="35" Name="FirstVisibleLine"/>
+      <int Value="79" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofdialog.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="15" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofmaker.cpp" Name="FileName"/>
-      <int Value="87" Name="FirstVisibleLine"/>
-      <int Value="90" Name="CurrentLine"/>
+      <int Value="160" Name="FirstVisibleLine"/>
+      <int Value="161" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/OfProjectMaker/ofmaker.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="26" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/Interfaces/plugin.h" Name="FileName"/>
+      <int Value="276" Name="FirstVisibleLine"/>
+      <int Value="277" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/Plugin/workspace.h" Name="FileName"/>
+      <int Value="155" Name="FirstVisibleLine"/>
+      <int Value="153" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/Interfaces/imanager.h" Name="FileName"/>
+      <int Value="164" Name="FirstVisibleLine"/>
+      <int Value="165" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/phwhitfield/softwareSources/codelite/Plugin/notebook_ex.h" Name="FileName"/>
+      <int Value="140" Name="FirstVisibleLine"/>
+      <int Value="141" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
     </TabInfo>
   </TabInfoArray>

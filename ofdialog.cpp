@@ -69,7 +69,7 @@ void OfDialog::ok(wxCommandEvent& e)
 {
 	wxString command(_("python "));
 	command += wxStandardPaths::Get().GetResourcesDir();
-	command += _("/ofProjectMaker.py '");
+	command += _("/ofMaker/ofProjectMaker.py '");
 	command += projPath->GetValue();
 	command += _("' '");
 	command += projName->GetValue();
@@ -77,7 +77,11 @@ void OfDialog::ok(wxCommandEvent& e)
 
 	system(command.mb_str());
 
+	projectName = projName->GetValue();
+
 	pathToProject = projPath->GetValue();
+	pathToProject += _("/");
+	pathToProject += projName->GetValue();
 	pathToProject += _("/");
 	pathToProject += projName->GetValue();
 	pathToProject += _(".project");

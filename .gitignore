@@ -9,3 +9,4 @@ DebugUnicode
 *.pyc
 bin
 bin/ofMaker
+lib

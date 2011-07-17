@@ -21,6 +21,8 @@ public:
 
 	//PLugin methods
 	void onNewOf(wxCommandEvent &e);
+
+	wxMenuItem *workspaceItem;
 };
 
 #endif //ofMaker

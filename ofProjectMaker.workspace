@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CodeLite_Workspace Name="ofProjectMaker" Database="./ofProjectMaker.tags">
-  <Project Name="ofMaker" Path="ofMaker.project" Active="No"/>
-  <Project Name="ofMakerStandalone" Path="standalone/ofMakerStandalone.project" Active="Yes"/>
+  <Project Name="ofMaker" Path="ofMaker.project" Active="Yes"/>
+  <Project Name="ofMakerStandalone" Path="standalone/ofMakerStandalone.project" Active="No"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
+    <WorkspaceConfiguration Name="Debug" Selected="no">
       <Project Name="ofMaker" ConfigName="DebugUnicode"/>
       <Project Name="ofMakerStandalone" ConfigName="Debug"/>
     </WorkspaceConfiguration>
