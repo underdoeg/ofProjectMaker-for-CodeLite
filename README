@@ -1,0 +1,16 @@
+This is a little application that provides a graphical user interface to create an empt openframeworks 007 application to use with CodeLite or just plain make files.
+
+It currently only works as a standalone application but integration into codeblocks as a plugin is planed. Just have to get past a strange segmentation fault...
+
+
+INSTALL PRECOMPILED VERSION
+============================
+- Download and extract the release.tar.gz file in the root of this repository -> https://github.com/underdoeg/ofProjectMaker-for-CodeLite/blob/master/release.tar.gz
+- cd into the directory
+- Then run sudo ./install.sh
+
+HOW TO INSTALL FROM SOURCE
+============================
+
+- Compile the ofMakerStandalone project of the ofProjectMaker workspace with codelite
+- Then run sudo ./install.sh
