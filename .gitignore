@@ -10,3 +10,6 @@ DebugUnicode
 bin
 bin/ofMaker
 lib
+*.mk
+*.workspace.session
+

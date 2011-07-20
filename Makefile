@@ -24,6 +24,8 @@ INCLUDES := $(INCLUDES) -I. -I../sdk/codelite_indexer/network -I../sdk/wxsqlite3
 
 
 OfProjectMakerObjects = \
+	Release_gcc_unicode/OfProjectMakerObjects_main.o\
+	Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o\
 	Release_gcc_unicode/OfProjectMakerObjects_ofmaker.o\
 
 ## build targets
@@ -69,6 +71,18 @@ PLUGIN_LINK_FLAGS := $(PLUGIN_LINK_FLAGS) $(shell pkg-config --libs gtk+-2.0)
 INCLUDES := $(INCLUDES) -I. -I../sdk/codelite_indexer/network -I../sdk/wxsqlite3/include -I../sdk/wxsqlite3/sqlite3/include -I../sdk/wxscintilla/include -I../sdk/wxscintilla/src/scintilla/include -I../sdk/wxscintilla/src/scintilla/src -I../sdk/wxscintilla/src/scintilla/lexlib -I../sdk/wxscintilla/src/scintilla/lexers -I../sdk/wxshapeframework/include -I../sdk/databaselayer/include/wx/dblayer/include -I../Interfaces -I../Debugger -I../Plugin -I../CodeLite 
 
 
+Release_gcc_unicode/OfProjectMakerObjects_main.o: main.cpp Release_gcc_unicode/OfProjectMakerObjects_main.o.d
+	$(CMP) -c main.cpp -fPIC $(CCFLAGS)  $(INCLUDES) -o Release_gcc_unicode/OfProjectMakerObjects_main.o
+Release_gcc_unicode/OfProjectMakerObjects_main.o.d:
+	$(CMP) -fPIC $(CCFLAGS)  $(INCLUDES) -MTRelease_gcc_unicode/OfProjectMakerObjects_main.o -MFRelease_gcc_unicode/OfProjectMakerObjects_main.o.d  -MM main.cpp
+Release_gcc_unicode/OfProjectMakerObjects_main.o.i:
+	$(CMP) -fPIC $(CCFLAGS)  $(INCLUDES) -E -o Release_gcc_unicode/OfProjectMakerObjects_main.o.i main.cpp
+Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o: ofdialog.cpp Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o.d
+	$(CMP) -c ofdialog.cpp -fPIC $(CCFLAGS)  $(INCLUDES) -o Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o
+Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o.d:
+	$(CMP) -fPIC $(CCFLAGS)  $(INCLUDES) -MTRelease_gcc_unicode/OfProjectMakerObjects_ofdialog.o -MFRelease_gcc_unicode/OfProjectMakerObjects_ofdialog.o.d  -MM ofdialog.cpp
+Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o.i:
+	$(CMP) -fPIC $(CCFLAGS)  $(INCLUDES) -E -o Release_gcc_unicode/OfProjectMakerObjects_ofdialog.o.i ofdialog.cpp
 Release_gcc_unicode/OfProjectMakerObjects_ofmaker.o: ofmaker.cpp Release_gcc_unicode/OfProjectMakerObjects_ofmaker.o.d
 	$(CMP) -c ofmaker.cpp -fPIC $(CCFLAGS)  $(INCLUDES) -o Release_gcc_unicode/OfProjectMakerObjects_ofmaker.o
 Release_gcc_unicode/OfProjectMakerObjects_ofmaker.o.d:
