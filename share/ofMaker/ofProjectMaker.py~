@@ -41,7 +41,7 @@ if __name__== '__main__':
         curFile=os.path.join(path, file)
         if os.path.isdir(curFile) == False:
             replaceInFile(curFile, "emptyExample", name)
-            #replaceInFile(curFile, "testApp", name+"App")
+            replaceInFile(curFile, "testApp", name+"App")
         if title=="emptyExample":
             os.rename(curFile,os.path.join(path, name+ext))
     
